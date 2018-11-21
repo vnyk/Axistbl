@@ -1,4 +1,4 @@
-<img src=screenshots/result.gif width=100% />
+<img src=screenshots/result.gif width=50% />
 
 # Custom Table Detection with Mask RCNN
 Custom Table detection and automatic column finding tool using Mack RCNN model on tensorflow's object detection.
