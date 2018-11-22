@@ -129,7 +129,7 @@ It will run your object detection model found at `output_inference_graph/frozen_
 Here’s what I got from running my model over all the frames in this clip from table data provided by axis bank
 
 ![](screenshots/Screenshot(4).png)
-![](screenshots/screenshotresult1.png)
-![](screenshots/screenshotresult2(1).png)
-![](screenshots/screenshotresult1.png)
+![](screenshots/screenshotresult1(5).png)
+![](screenshots/screenshotresult1(6).png)
+![](screenshots/screenshotresult1(8).png)
 ![](screenshots/finalresult1(2).png)
