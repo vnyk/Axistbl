@@ -1,7 +1,48 @@
-<img src=screenshots/result.gif width=30% />
+![](screenshots/result.gif)
 
-# Custom Table Detection with Mask RCNN
-Custom Table detection and automatic column finding tool using Mack RCNN model on tensorflow's object detection.
+# Custom Table Detection with Mask RCNN 
+Custom Table detection and automatic column finding tool using Mack RCNN model on tensorflow's object detection. Further we are using a custom ocr for the text reading function.
+
+## Data Preparation
+
+We have prepared the custom dataset for the training purpose of the algorithm. For it, we annotated 502 images using an opensource tool [labelimg](https://github.com/tzutalin/labelImg). Our dataset contained images from the axis bank dataset of tables. For training we have trained in two formats first whole tables(for automatic table detection in documents) and second for columns(To detect columns from detected tables).
+The annotation should be in following format: 
+
+```
+<annotation>
+    <folder>images</folder>
+    <filename>image1.jpg</filename>
+    <size>
+        <width>1000</width>
+        <height>563</height>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>Tie Fighter</name>
+        <bndbox>
+            <xmin>112</xmin>
+            <ymin>281</ymin>
+            <xmax>122</xmax>
+            <ymax>291</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>Tie Fighter</name>
+        <bndbox>
+            <xmin>87</xmin>
+            <ymin>260</ymin>
+            <xmax>95</xmax>
+            <ymax>268</ymax>
+        </bndbox>
+    </object>
+</annotation>
+```
+
+Please make sure they are exported as PASCAL VOC format.
+
+You’ll need to add your training images to `images`, add your XML annotations to `annotations/xmls`, update `trainval.txt`, and `label_map.pbtxt`.
+
+`trainval.txt` is a list of file names that allows us to find and correlate the `JPG` and `XML` files. The following `trainval.txt` list would let us to find `abc.jpg`, `abc.xml`, `123.jpg`, `123.xml`, `xyz.jpg` and `xyz.xml`
 
 ## Installation
 
@@ -86,10 +127,9 @@ It will run your object detection model found at `output_inference_graph/frozen_
 
 ## Results
 Here’s what I got from running my model over all the frames in this clip from table data provided by axis bank
-<img src=screenshots/Screenshot(4).png width=100% />
-<img src=screenshots/screenshotresult1.png width=100% />
-<img src=screenshots/screenshotresult2(1).png width=100% />
-<img src=screenshots/screenshotresult1.png width=100% />
-<img src=screenshots/finalresult1(2).png width=100% />
 
-
+![](screenshots/Screenshot(4).png)
+![](screenshots/screenshotresult1.png)
+![](screenshots/screenshotresult2(1).png)
+![](screenshots/screenshotresult1.png)
+![](screenshots/finalresult1(2).png)
