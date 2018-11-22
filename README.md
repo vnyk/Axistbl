@@ -130,6 +130,8 @@ Here’s what I got from running my model over all the frames in this clip from 
 
 ![](screenshots/Screenshot(4).png)
 
+![](screenshots/Screenshot (3).png)
+
 ![](screenshots/screenshotresult1(5).png)
 
 ![](screenshots/screenshotresult1(6).png)
