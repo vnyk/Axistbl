@@ -127,13 +127,14 @@ It will run your object detection model found at `output_inference_graph/frozen_
 
 
 ## OCR Preparation
-but we are also working on our Custom OCR for which we built a model with 5 CNN layers and 2 RNN layers in Tensorflow, Our model is able to read the text from images with high accuracy. To test it, we have trained the model on images from [IAM dataset](http://www.fki.inf.unibe.ch/databases/iam-handwriting-database) for higher accuracy, test it by running in `ocr/`
+we are also working on our Custom OCR for which we built a model with 5 CNN layers and 2 RNN layers in Tensorflow, Our model is able to read the text from images with high accuracy. To test it, we have trained the model on images from [IAM dataset](http://www.fki.inf.unibe.ch/databases/iam-handwriting-database) for higher accuracy, test it by running in `ocr/`
 ```
 python main.py --validate
 ```
 
 ### ocr results
 ![](screenshots/screenshotresult1(6).png)
+
 
 
 
