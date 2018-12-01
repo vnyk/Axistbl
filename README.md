@@ -125,6 +125,19 @@ python object_detection/object_detection_runner.py
 
 It will run your object detection model found at `output_inference_graph/frozen_inference_graph.pb` on all the images in the `test_images` directory and output the results in the `output/test_images` directory.
 
+
+## OCR Preparation
+Initially we were using custom trained model for Tessaract 4, but we are also working on our Custom OCR for which we built a model with 5 CNN layers and 2 RNN layers in Tensorflow, Our model is able to read the text from images with high accuracy. To test it, we have trained the model on images from [IAM dataset](http://www.fki.inf.unibe.ch/databases/iam-handwriting-database) for higher accuracy, test it by running in `ocr/`
+```
+python main.py --validate
+```
+
+### ocr results
+
+![](screenshots/bocr.png)
+
+![](screenshots/bocr1.png)
+
 ## Results
 Here’s what I got from running my model over all the frames in this clip from table data provided by axis bank
 
